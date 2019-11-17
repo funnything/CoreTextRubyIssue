@@ -1,0 +1,20 @@
+PODS:
+  - Cartography (4.0.0)
+  - Then (2.6.0)
+
+DEPENDENCIES:
+  - Cartography
+  - Then
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - Cartography
+    - Then
+
+SPEC CHECKSUMS:
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+
+PODFILE CHECKSUM: 6b44e6ace57ce1b60277b49b917e5996dfdfea87
+
+COCOAPODS: 1.8.4

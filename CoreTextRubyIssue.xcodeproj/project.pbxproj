@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F7116FF2BBA73A9E835B199 /* Pods_CoreTextRubyIssue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2577F3D2F01AC3D8BC499620 /* Pods_CoreTextRubyIssue.framework */; };
 		7D25B31C2381122400D1B697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D25B31B2381122400D1B697 /* AppDelegate.swift */; };
 		7D25B31E2381122400D1B697 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D25B31D2381122400D1B697 /* SceneDelegate.swift */; };
 		7D25B3202381122400D1B697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D25B31F2381122400D1B697 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24AC19AEC8E147FAB7D833F8 /* Pods-CoreTextRubyIssue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTextRubyIssue.debug.xcconfig"; path = "Target Support Files/Pods-CoreTextRubyIssue/Pods-CoreTextRubyIssue.debug.xcconfig"; sourceTree = "<group>"; };
+		2577F3D2F01AC3D8BC499620 /* Pods_CoreTextRubyIssue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTextRubyIssue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D25B3182381122400D1B697 /* CoreTextRubyIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreTextRubyIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D25B31B2381122400D1B697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D25B31D2381122400D1B697 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		7D25B3242381122500D1B697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D25B3272381122500D1B697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D25B3292381122500D1B697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33D90EEB03DC04EED09EF2F /* Pods-CoreTextRubyIssue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTextRubyIssue.release.xcconfig"; path = "Target Support Files/Pods-CoreTextRubyIssue/Pods-CoreTextRubyIssue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7116FF2BBA73A9E835B199 /* Pods_CoreTextRubyIssue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13C3526A911E489BC2A0F0A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2577F3D2F01AC3D8BC499620 /* Pods_CoreTextRubyIssue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B249B3B64EC2FC1D9E4BC36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24AC19AEC8E147FAB7D833F8 /* Pods-CoreTextRubyIssue.debug.xcconfig */,
+				D33D90EEB03DC04EED09EF2F /* Pods-CoreTextRubyIssue.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D25B30F2381122400D1B697 = {
 			isa = PBXGroup;
 			children = (
 				7D25B31A2381122400D1B697 /* CoreTextRubyIssue */,
 				7D25B3192381122400D1B697 /* Products */,
+				2B249B3B64EC2FC1D9E4BC36 /* Pods */,
+				13C3526A911E489BC2A0F0A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D25B32C2381122500D1B697 /* Build configuration list for PBXNativeTarget "CoreTextRubyIssue" */;
 			buildPhases = (
+				870FF6D7CDD6B933AC05EDF5 /* [CP] Check Pods Manifest.lock */,
 				7D25B3142381122400D1B697 /* Sources */,
 				7D25B3152381122400D1B697 /* Frameworks */,
 				7D25B3162381122400D1B697 /* Resources */,
+				344B0DE1D61B4E467A057B3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		344B0DE1D61B4E467A057B3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreTextRubyIssue/Pods-CoreTextRubyIssue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreTextRubyIssue/Pods-CoreTextRubyIssue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoreTextRubyIssue/Pods-CoreTextRubyIssue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		870FF6D7CDD6B933AC05EDF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreTextRubyIssue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D25B3142381122400D1B697 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		7D25B32D2381122500D1B697 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24AC19AEC8E147FAB7D833F8 /* Pods-CoreTextRubyIssue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		7D25B32E2381122500D1B697 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D33D90EEB03DC04EED09EF2F /* Pods-CoreTextRubyIssue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
